@@ -10,17 +10,22 @@ public class Tester {
      * Complete the function below.
      * DO NOT MODIFY anything outside this method. 
      */
-    static boolean[] twins(String[] a, String[] b) {
+    private static boolean[] twins(String[] a, String[] b) {
         boolean[] result = new boolean[a.length];
+        int k=0;
         for(int i=0; i<a.length; i++)
         {
-          if(a[i].length != b[i].length)
+          if(a[i].length() != b[i].length())
           {
-            for(int j=0; j<a[i].length; j++)
+            for(int j=0; j<a[i].length(); j++)
             {
               if(a[i].charAt(j) != b[i].charAt(j))
               {
                 /*swap char at j with char at j+(2*k), where k>=0 */
+//                  char temp = a[i].charAt(j);
+//                  a[i].toCharArray(). = a[i].charAt(j+(2*k));
+//                  a[i].charAt(j+(2*k)) = temp;
+                  k++;
               }
             }
           }

@@ -5,7 +5,7 @@ class Statically
 {
    private static int num;
    private static int i;   
-   public static void main(String args[])
+   public static void main(String[] args)
    {
      for(; i<Integer.parseInt(args[0]); i++)
      {

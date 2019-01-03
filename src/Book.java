@@ -6,6 +6,11 @@ class Book{
   private int publishYear;
   private String comment;
 
+  public Book()
+  {
+    super();
+  }
+
   public Book(String name, String author, int publishYear, String comment)
   {
     this.name = name;
